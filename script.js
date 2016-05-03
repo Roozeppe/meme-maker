@@ -15,8 +15,11 @@ function redrawMeme(image, topLine, bottomLine) {
   // Get Canvas2DContext
   var canvas = document.querySelector('canvas');
   var ctx = canvas.getContext("2d");
+
   // Your code here
-  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  if (image != null) {
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+  }
 
     // Meme text's specifications.
     ctx.font = "36pt Impact";
@@ -25,12 +28,16 @@ function redrawMeme(image, topLine, bottomLine) {
     ctx.lineWidth = 3;
 
     // Top text.
-    ctx.fillText(topLine, canvas.width / 2, 60);
-    ctx.strokeText(topLine, canvas.width / 2, 60);
+    if (topLine != null) {
+      ctx.fillText(topLine, canvas.width / 2, 60);
+      ctx.strokeText(topLine, canvas.width / 2, 60);
+    }
 
     // Bottom text.
-    ctx.fillText(bottomLine, canvas.width / 2, 480);
-    ctx.strokeText(bottomLine, canvas.width / 2, 480);
+    if (bottomLine != null) {
+      ctx.fillText(bottomLine, canvas.width / 2, canvas.height - 40);
+      ctx.strokeText(bottomLine, canvas.width / 2, canvas.height - 40);
+    }
 }
     
 function saveFile() {

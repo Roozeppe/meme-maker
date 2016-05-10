@@ -1,3 +1,15 @@
+// Facebook pop-up function.
+function fbShare() {
+  window.open("https://www.facebook.com/sharer/sharer.php?u=http://roozeppe.github.io/meme-maker", 
+    "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=5,left=5,width=600,height=600");
+};
+
+// Twitter pop-up function.
+function ttShare() {
+  window.open("https://twitter.com/intent/tweet?text=Check%20out%20this%20cool%20meme%20maker&url=http://roozeppe.github.io/meme-maker&hashtags=happycoding&via=roozeppejp", 
+    "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=5,left=5,width=600,height=600");
+};
+
 function textChangeListener (evt) {
   var id = evt.target.id;
   var text = evt.target.value;

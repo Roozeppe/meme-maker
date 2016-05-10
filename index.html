@@ -2,13 +2,31 @@
 
 <html>
 <head>
-  <title>MemeMaker-Simple</title>
+  <title>Meme Maker</title>
     
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="keywords" content="meme maker make meme online free meme maker.">
+  <meta name="description" content="A simple web app that creates memes.">
+  
+  <!-- Meta tags for facebook shared button -->
+  <meta property="og:url" content="http://roozeppe.github.io/meme-maker" />
+  <meta property="og:type" content="web app" />
+  <meta property="og:title" content="Check out this free meme maker." />
+  <meta property="og:description" content="A simple web app that creates memes. Enjoy!" />
+  <meta property="og:image" content="https://github.com/Roozeppe/meme-maker/blob/gh-pages/baby.jpg" alt="Photo of a baby"/>
+  <meta name="byl" content='Roozeppe Jean Pierre' />
+
+  <!-- Meta tags for twitter shared button -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@roozeppejp" />
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -24,6 +42,17 @@
       <span>Bottom Line:</span><br/>
       <input id="bottomLineText" type="text"><br/>
       <button id="saveBtn">Save</button>
+
+      <br>
+      <br>
+      <a href="https://www.facebook.com/roozeppejp" target="_blank">Made by Roozeppe</a>
+      <br>
+      <br>
+      <a href="https://github.com/Roozeppe/meme-maker" target="_blank">Fork me on github<i class="fa fa-github fa-fw fa-lg"></i></a>
+      <br>
+      <h4>Share this project</h4>
+      <i onclick=fbShare() class="fa fa-facebook fa-fw fa-lg fa-lg"></i>
+      <i onclick=ttShare() class="fa fa-twitter fa-fw fa-lg fa-lg"></i>
     </div>
   </div>
 
